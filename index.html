@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Calculate my own Money</title>
+</head>
+<body>
+   <section class="w-4/5 grid gap-4 mx-auto">
+    <h1 class="text-center font-bold text-4xl text-green-400">Money calculation</h1>
+    <div class="grid grid-cols-2 gap-20 bg-slate-300">
+        <div >
+            <img class="" src="images/money-2.jpg" alt="">
+        </div>
+        <!-- ... -->
+        <div class="bg-slate-300">
+             <h2 class="font-bold text-2xl mb-4 text-center">Income</h2>
+             <label class="block text-lg font-bold">Income:
+                 <input id="income" class="px-4 py-2 mb-4 rounded-md" type="text" placeholder="Enter income amount">
+             </label>
+             <h2 class="font-bold text-2xl mb-4">Expense</h2>
+             <label class="block text-lg font-bold">Food:
+                <input id="food" class="px-4 py-2 mb-4 rounded-md" type="text" placeholder="Enter income amount">
+            </label>
+            <label class="block text-lg font-bold">Rent:
+                <input id="rent" class="px-4 py-2 mb-4 rounded-md" type="text" placeholder="Enter income amount">
+            </label>
+            <label class="block text-lg font-bold">Clothes:
+                <input id="clothes" class="px-4 py-2 mb-4 rounded-md" type="text" placeholder="Enter income amount">
+            </label>
+            <button onclick="calculateAmount()" class="font-bold text-2xl mb-4 p-2 bg-green-400	rounded-md mx-auto">Calculate</button>
+            <h2 class="font-bold text-2xl ">Total Expenses: $<span id="expense">5500</span> </h2>:</h2>
+            <h2 class="font-bold text-2xl mb-4">Balance: $<span id="balance"> 4500</span> </h2>
+           <div class="grid grid-cols-4 justify-center">
+            <label class="text-lg font-bold">Save:
+            </label>
+            <input id="save" class="px-4 py-2 mb-4 text-lg rounded-md" type="text" placeholder="Save">
+            <h4 class="mx-16 font-bold text-xl">%</h4>
+            <button onclick="savingAmount()" class="font-bold text-2xl p-2 bg-green-400 rounded-md mx-8">Save</button>
+           </div>
+           <h2 class="font-bold text-2xl mb-4">Saving Amount: <span id="save-amount">2000</span> </h2>
+            <h2 class="font-bold text-2xl mb-4">Remaining Amount: <span id="remaining-amount">2500</span></h2>
+        </div>
+      </div>
+   </section>
+   <script src="js/calculate.js"></script>
+</body>
+</html>
